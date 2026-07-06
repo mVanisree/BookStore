@@ -1,0 +1,1077 @@
+html{
+
+    scroll-behavior:smooth;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family: "Segoe UI", Arial, sans-serif;
+    background:#f7f3ef;
+    color:#333;
+    line-height:1.6;
+}
+
+a{
+    text-decoration:none;
+}
+
+img{
+    max-width:100%;
+    display:block;
+}
+
+/* ===========================
+   NAVBAR
+=========================== */
+
+.navbar{
+    position:sticky;
+    top:0;
+    z-index:999;
+}
+
+header{
+    background:#5b2701;
+    color:white;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:20px 60px;
+
+    box-shadow:0 3px 10px rgba(0,0,0,.2);
+}
+
+header h1{
+
+    font-size:2rem;
+
+    letter-spacing:.5px;
+}
+
+nav{
+
+    display:flex;
+
+    gap:30px;
+
+    align-items:center;
+}
+
+nav a{
+
+    color:white;
+
+    font-weight:600;
+
+    transition:.3s;
+}
+
+nav a:hover{
+
+    color:#ffcb74;
+}
+
+/* ===========================
+   HERO
+=========================== */
+
+.book1{
+
+    background:linear-gradient(rgba(91,39,1,.9),
+    rgba(91,39,1,.9));
+
+    color:white;
+
+    text-align:center;
+
+    padding:100px 20px;
+}
+
+#mainheading{
+
+    font-size:3.5rem;
+
+    margin-bottom:20px;
+}
+
+.subheading{
+
+    font-size:1.5rem;
+
+    margin-bottom:35px;
+}
+
+.browse{
+
+    background:#dca15b;
+
+    color:#5b2701;
+
+    padding:15px 35px;
+
+    border:none;
+
+    border-radius:10px;
+
+    font-size:18px;
+
+    cursor:pointer;
+
+    transition:.3s;
+}
+
+.browse:hover{
+
+    background:#ffcb74;
+
+    transform:translateY(-4px);
+}
+
+/* ===========================
+   COMMON TITLES
+=========================== */
+
+.heading{
+
+    text-align:center;
+
+    color:#5b2701;
+
+    margin-top:50px;
+
+    font-size:2.5rem;
+}
+
+.sum{
+
+    text-align:center;
+
+    color:#666;
+
+    margin:15px 0 40px;
+}
+
+/* ===========================
+   FOOTER
+=========================== */
+
+footer{
+
+    background:#5b2701;
+
+    color:white;
+
+    margin-top:80px;
+}
+
+.quick{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+
+    gap:35px;
+
+    padding:45px 60px;
+}
+
+.links{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:12px;
+}
+
+.links h3{
+
+    color:#ffcb74;
+}
+
+.links a{
+
+    color:white;
+
+    transition:.3s;
+}
+
+.links a:hover{
+
+    color:#ffcb74;
+}
+
+.links p{
+
+    color:#ddd;
+}
+
+.copyright{
+
+    border-top:1px solid rgba(255,255,255,.2);
+
+    text-align:center;
+
+    padding:20px;
+}
+
+/* ===========================
+   PRODUCTS SECTION
+=========================== */
+
+.feature{
+    width:90%;
+    margin:50px auto;
+
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(270px,1fr));
+    gap:30px;
+}
+
+/* ===========================
+   PRODUCT CARD
+=========================== */
+
+.book-card{
+
+    background:white;
+
+    border-radius:15px;
+
+    overflow:hidden;
+
+    box-shadow:0 8px 20px rgba(0,0,0,.12);
+
+    transition:.3s;
+
+    padding:20px;
+
+    text-align:center;
+}
+
+.book-card:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:0 12px 30px rgba(0,0,0,.18);
+}
+
+.book-card img{
+
+    width:180px;
+
+    height:250px;
+
+    object-fit:cover;
+
+    margin:auto;
+
+    margin-bottom:20px;
+
+    border-radius:8px;
+}
+
+.book-card h3{
+
+    color:#5b2701;
+
+    margin:10px 0;
+}
+
+.book-card p{
+
+    color:#666;
+
+    margin:8px 0;
+}
+
+/* ===========================
+   BUTTON
+=========================== */
+
+.addtocart{
+
+    background:#5b2701;
+
+    color:white;
+
+    border:none;
+
+    border-radius:8px;
+
+    padding:12px 25px;
+
+    cursor:pointer;
+
+    font-size:16px;
+
+    margin:15px 0;
+
+    transition:.3s;
+}
+
+.addtocart:hover{
+
+    background:#dca15b;
+
+    color:#5b2701;
+}
+
+.book-card a{
+
+    display:block;
+
+    margin-top:10px;
+
+    color:#5b2701;
+
+    font-weight:bold;
+}
+
+.book-card a:hover{
+
+    color:#dca15b;
+}
+
+/* ===========================
+   SEARCH
+=========================== */
+
+.search{
+
+    width:90%;
+
+    margin:40px auto;
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:20px;
+
+    flex-wrap:wrap;
+}
+
+#searchbar{
+
+    width:350px;
+
+    padding:14px;
+
+    border:1px solid #ccc;
+
+    border-radius:8px;
+
+    outline:none;
+
+    font-size:16px;
+}
+
+#searchbar:focus{
+
+    border-color:#5b2701;
+}
+
+.dropdown{
+
+    padding:14px;
+
+    border-radius:8px;
+
+    border:1px solid #ccc;
+
+    width:220px;
+
+    cursor:pointer;
+}
+
+/* ===========================
+   CATEGORY CARDS
+=========================== */
+
+.category{
+
+    width:90%;
+
+    margin:50px auto;
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(170px,1fr));
+
+    gap:20px;
+}
+
+.cat{
+
+    background:white;
+
+    text-align:center;
+
+    padding:25px;
+
+    border-radius:12px;
+
+    box-shadow:0 4px 10px rgba(0,0,0,.12);
+
+    transition:.3s;
+
+    cursor:pointer;
+}
+
+.cat:hover{
+
+    background:#dca15b;
+
+    color:#5b2701;
+
+    transform:translateY(-5px);
+}
+
+/* ===========================
+   ABOUT PAGE
+=========================== */
+
+.half{
+    width:100%;
+    padding:60px 0;
+}
+
+.aboutsec{
+
+    width:85%;
+
+    margin:auto;
+
+    background:white;
+
+    padding:40px;
+
+    border-radius:15px;
+
+    box-shadow:0 5px 20px rgba(0,0,0,.1);
+}
+
+.aboutsec h2,
+.aboutsec h3{
+
+    color:#5b2701;
+
+    margin:25px 0 15px;
+}
+
+.sum1{
+
+    color:#555;
+
+    line-height:1.8;
+
+    font-size:17px;
+}
+
+.bookshype{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+
+    gap:25px;
+
+    margin:40px 0;
+}
+
+.aboutbooks{
+
+    background:#fffaf5;
+
+    border-radius:12px;
+
+    text-align:center;
+
+    padding:25px;
+
+    box-shadow:0 4px 15px rgba(0,0,0,.08);
+
+    transition:.3s;
+}
+
+.aboutbooks:hover{
+
+    transform:translateY(-6px);
+}
+
+.booksnum{
+
+    font-size:38px;
+
+    color:#d2872d;
+
+    margin-bottom:10px;
+}
+
+/* ===========================
+   CONTACT PAGE
+=========================== */
+
+.holdcform{
+
+    width:90%;
+
+    margin:auto;
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    justify-content:center;
+
+    gap:30px;
+}
+
+.contactform,
+.reachus{
+
+    background:white;
+
+    border-radius:15px;
+
+    padding:30px;
+
+    box-shadow:0 6px 20px rgba(0,0,0,.1);
+
+    flex:1;
+
+    min-width:320px;
+}
+
+.details{
+
+    display:flex;
+
+    flex-direction:column;
+
+    margin-bottom:20px;
+}
+
+.details label{
+
+    margin-bottom:8px;
+
+    font-weight:600;
+}
+
+/* ===========================
+   INPUTS
+=========================== */
+
+.inputs{
+
+    width:100%;
+
+    padding:14px;
+
+    border:1px solid #ccc;
+
+    border-radius:8px;
+
+    font-size:15px;
+
+    outline:none;
+
+    transition:.3s;
+}
+
+.inputs:focus{
+
+    border-color:#5b2701;
+
+    box-shadow:0 0 8px rgba(91,39,1,.2);
+}
+
+textarea.inputs{
+
+    resize:none;
+}
+
+/* ===========================
+   LOGIN & SIGNUP
+=========================== */
+
+#logins,
+#signin{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    padding:60px 20px;
+}
+
+.login,
+.createacc{
+
+    background:white;
+
+    width:450px;
+
+    border-radius:15px;
+
+    padding:35px;
+
+    box-shadow:0 8px 25px rgba(0,0,0,.12);
+}
+
+.login h2,
+.createacc h2{
+
+    margin-bottom:10px;
+}
+
+.log,
+.sign{
+
+    display:flex;
+
+    flex-direction:column;
+
+    margin-bottom:18px;
+}
+
+.log label,
+.sign label{
+
+    margin-bottom:8px;
+
+    font-weight:600;
+}
+
+.rem{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    margin:15px 0;
+}
+
+/* ===========================
+   INTEREST GRID
+=========================== */
+
+.intrest{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:15px;
+
+    margin:20px 0;
+}
+
+.intrest1{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:8px;
+}
+
+/* ===========================
+   BUTTONS
+=========================== */
+
+.loginb,
+.createaccb,
+.sendmsg{
+
+    width:100%;
+
+    padding:14px;
+
+    border:none;
+
+    border-radius:10px;
+
+    background:#5b2701;
+
+    color:white;
+
+    font-size:16px;
+
+    cursor:pointer;
+
+    transition:.3s;
+}
+
+.loginb:hover,
+.createaccb:hover,
+.sendmsg:hover{
+
+    background:#d2872d;
+
+    color:#5b2701;
+}
+/* ===========================
+   PRODUCT DETAILS
+=========================== */
+
+.product-details{
+
+    width:90%;
+
+    margin:60px auto;
+
+    background:white;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:60px;
+
+    padding:50px;
+
+    border-radius:15px;
+
+    box-shadow:0 8px 25px rgba(0,0,0,.12);
+
+    flex-wrap:wrap;
+}
+
+.product-details img{
+
+    width:320px;
+
+    height:450px;
+
+    object-fit:cover;
+
+    border-radius:12px;
+
+    box-shadow:0 8px 20px rgba(0,0,0,.15);
+}
+
+.product-info{
+
+    max-width:500px;
+}
+
+.product-info h1{
+
+    color:#5b2701;
+
+    margin-bottom:20px;
+
+    font-size:2.3rem;
+}
+
+.product-info h2{
+
+    color:#d2872d;
+
+    margin:15px 0;
+}
+
+.product-info h3{
+
+    color:#555;
+
+    margin:10px 0;
+}
+
+.product-info p{
+
+    color:#666;
+
+    line-height:1.8;
+
+    margin:25px 0;
+}
+
+/* ===========================
+   CART PAGE
+=========================== */
+
+.cart-container{
+
+    width:90%;
+
+    margin:40px auto;
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:25px;
+}
+
+.cart-item{
+
+    background:white;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:20px;
+
+    border-radius:15px;
+
+    box-shadow:0 6px 18px rgba(0,0,0,.12);
+
+    gap:20px;
+}
+
+.cart-item img{
+
+    width:120px;
+
+    height:160px;
+
+    object-fit:cover;
+
+    border-radius:10px;
+}
+
+.cart-item h2{
+
+    color:#5b2701;
+}
+
+.cart-item h3{
+
+    color:#666;
+}
+
+.cart-item button{
+
+    margin:5px;
+}
+
+.cart-summary{
+
+    background:white;
+
+    margin-top:30px;
+
+    padding:30px;
+
+    border-radius:15px;
+
+    box-shadow:0 6px 18px rgba(0,0,0,.12);
+
+    text-align:center;
+}
+
+.cart-summary h2{
+
+    color:#5b2701;
+
+    margin:15px 0;
+}
+
+/* ===========================
+   LINKS
+=========================== */
+
+.book-card a,
+.product-info a{
+
+    color:#5b2701;
+
+    font-weight:bold;
+
+    transition:.3s;
+}
+
+.book-card a:hover,
+.product-info a:hover{
+
+    color:#d2872d;
+}
+
+/* ===========================
+   SCROLLBAR
+=========================== */
+
+::-webkit-scrollbar{
+
+    width:10px;
+}
+
+::-webkit-scrollbar-thumb{
+
+    background:#8b4513;
+
+    border-radius:10px;
+}
+
+::-webkit-scrollbar-track{
+
+    background:#eee;
+}
+
+/* ===========================
+   MOBILE RESPONSIVE
+=========================== */
+
+@media (max-width:992px){
+
+header{
+
+    padding:20px;
+}
+
+nav{
+
+    gap:15px;
+
+    flex-wrap:wrap;
+
+    justify-content:center;
+}
+
+#mainheading{
+
+    font-size:2.6rem;
+}
+
+.subheading{
+
+    font-size:1.2rem;
+}
+
+.feature{
+
+    grid-template-columns:repeat(auto-fit,minmax(230px,1fr));
+}
+
+.product-details{
+
+    flex-direction:column;
+
+    text-align:center;
+}
+
+.product-info{
+
+    max-width:100%;
+}
+
+.cart-item{
+
+    flex-direction:column;
+
+    text-align:center;
+}
+
+.bookshype{
+
+    grid-template-columns:repeat(2,1fr);
+}
+
+.category{
+
+    grid-template-columns:repeat(2,1fr);
+}
+}
+
+@media (max-width:600px){
+
+header{
+
+    flex-direction:column;
+}
+
+nav{
+
+    flex-direction:column;
+
+    gap:15px;
+}
+
+#mainheading{
+
+    font-size:2rem;
+}
+
+.subheading{
+
+    font-size:1rem;
+}
+
+.book-card{
+
+    width:100%;
+}
+
+.product-details img{
+
+    width:220px;
+
+    height:320px;
+}
+
+.bookshype{
+
+    grid-template-columns:1fr;
+}
+
+.category{
+
+    grid-template-columns:1fr;
+}
+
+.intrest{
+
+    grid-template-columns:1fr;
+}
+
+.quick{
+
+    grid-template-columns:1fr;
+
+    text-align:center;
+}
+
+.links{
+
+    align-items:center;
+}
+}
+.book-card,
+.aboutbooks,
+.contactform,
+.reachus,
+.login,
+.createacc,
+.product-details,
+.cart-item{
+
+    transition:.3s;
+}
+
+.book-card:hover,
+.aboutbooks:hover,
+.contactform:hover,
+.reachus:hover{
+
+    transform:translateY(-5px);
+}
